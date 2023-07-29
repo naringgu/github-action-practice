@@ -1,1 +1,7 @@
-
+name: Daily Weather Noti
+on: push
+jobs:
+  echo:
+    runs-on: macos-latest
+    steps:
+      - run: echo 'Hello, GitHub Actions!'
