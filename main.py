@@ -9,6 +9,7 @@ import json
 now = datetime.datetime.now()
 nowDate = now.strftime('%Y년 %m월 %d일 %H시 %M분 입니다.')
 
+str = ''
 str = str + '   Current Datetime, ' + nowDate
 str = str + '   오늘의 날씨 정보입니다.\n'
 print('   Current Datetime, ' + nowDate)
