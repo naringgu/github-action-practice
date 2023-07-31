@@ -41,7 +41,7 @@ print(summary.text.strip())
 url="https://kapi.kakao.com/v2/api/talk/memo/default/send"
 
 headers={
-    "Authorization" : "Bearer " + "M4KnKwDqY5DN3JK6nlckO6Tpyt3pl2xXV0_37AMBCj1zTgAAAYmrUEFe"
+    "Authorization" : "Bearer " + "token"
 }
 
 data = {
