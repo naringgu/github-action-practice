@@ -21,7 +21,7 @@ title = soup.find("title").string
 weather_info = soup.find("wf").string
 
 str += title
-str += weather_info.replace("<br />", "\n "), sep='\n'
+str += weather_info.replace("<br />", "\n ")
 print(title)
 print(weather_info.replace("<br />", "\n "), sep='\n')
 
