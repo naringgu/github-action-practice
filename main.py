@@ -9,8 +9,8 @@ import json
 now = datetime.datetime.now()
 nowDate = now.strftime('%Y년 %m월 %d일 %H시 %M분 입니다.')
 
-str += '   Current Datetime, ' + nowDate
-str += '   오늘의 날씨 정보입니다.\n'
+str = str + '   Current Datetime, ' + nowDate
+str = str + '   오늘의 날씨 정보입니다.\n'
 print('   Current Datetime, ' + nowDate)
 print('   오늘의 날씨 정보입니다.\n')
 
@@ -20,8 +20,8 @@ soup = BeautifulSoup(res, "html.parser")
 title = soup.find("title").string
 weather_info = soup.find("wf").string
 
-str += title
-str += weather_info.replace("<br />", "\n ")
+str = str + title
+str = str + weather_info.replace("<br />", "\n ")
 print(title)
 print(weather_info.replace("<br />", "\n "), sep='\n')
 
@@ -30,9 +30,9 @@ webpage = urllib.request.urlopen('https://search.naver.com/search.naver?sm=top_h
 soup = BeautifulSoup(webpage, 'html.parser')
 temps = soup.find('div','temperature_text')
 summary = soup.find('p','summary')
-str += '\n'
-str += "서울 " + temps.text.strip()
-str += summary.text.strip()
+str = str + '\n'
+str = str + "서울 " + temps.text.strip()
+str = str + summary.text.strip()
 print('\n')
 print("서울 " + temps.text.strip())
 print(summary.text.strip())
